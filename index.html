@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS externe -->
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Quel lieu recherchez vous ?" spellcheck="false">
+            <button><img src="images/search.png"></button>
+        </div>
+
+        <!-- Message d'erreur pour un lieu incorrect -->
+        <div class="error">
+            <p> Le nom de ce lieu est incorrect ! Veuillez saisir un nom valide.</p>
+        </div>
+
+        <!-- Contenu météo -->
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon"> <!-- Icône météo -->
+            <h1 class="temp">22°C</h1> <!-- Température -->
+            <h2 class="city">New York</h2> <!-- Nom de la ville -->
+            <div class="details">
+                
+                <!-- Détails météo -->
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p> <!-- Humidité -->
+                        <p>Humidité</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">15 km/h</p> <!-- Vitesse du vent -->
+                        <p>Vitesse du vent</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
